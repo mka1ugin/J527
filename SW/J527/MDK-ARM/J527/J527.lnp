@@ -1,0 +1,28 @@
+--cpu Cortex-M3
+"j527\startup_stm32f103xb.o"
+"j527\main.o"
+"j527\stm32f1xx_it.o"
+"j527\stm32f1xx_hal_msp.o"
+"j527\stm32f1xx_hal_gpio_ex.o"
+"j527\stm32f1xx_hal_adc.o"
+"j527\stm32f1xx_hal_adc_ex.o"
+"j527\stm32f1xx_hal.o"
+"j527\stm32f1xx_hal_rcc.o"
+"j527\stm32f1xx_hal_rcc_ex.o"
+"j527\stm32f1xx_hal_gpio.o"
+"j527\stm32f1xx_hal_dma.o"
+"j527\stm32f1xx_hal_cortex.o"
+"j527\stm32f1xx_hal_pwr.o"
+"j527\stm32f1xx_hal_flash.o"
+"j527\stm32f1xx_hal_flash_ex.o"
+"j527\stm32f1xx_hal_exti.o"
+"j527\stm32f1xx_hal_i2c.o"
+"j527\stm32f1xx_hal_iwdg.o"
+"j527\stm32f1xx_hal_tim.o"
+"j527\stm32f1xx_hal_tim_ex.o"
+"j527\stm32f1xx_hal_uart.o"
+"j527\system_stm32f1xx.o"
+--strict --scatter "J527\J527.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "J527.map" -o J527\J527.axf
